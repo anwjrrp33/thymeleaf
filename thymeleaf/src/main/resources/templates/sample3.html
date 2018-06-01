@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>AAA</td>
+			<td>AAA</td>
+			<td>AAA</td>
+			<td>AAA</td>
+			<td>AAA</td>
+		</tr>
+		<tr th:each="vo:${list}">
+			<td th:text="vo.mid">AAA</td>
+			<td>AAA</td>
+			<td>AAA</td>
+			<td>AAA</td>
+			<td>AAA</td>			
+		</tr>
+	</table>
+	
+	<scrpit th:inline="javascript">
+		var chaehwan = [[${list]];
+		console.log(chaehwan);
+	</scrpit>
+</body>
+</html>
